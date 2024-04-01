@@ -1,0 +1,14 @@
+GameName = "Drive Cars Down A Hill!" 
+
+tab1name = "Main" 
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))() 
+
+local GameName = Library:NewWindow(GameName) 
+
+local Tab1 = GameName:NewSection(tab1name) 
+
+Tab1:CreateButton("Instant UGC", function(value)
+workspace:WaitForChild("EggHack"):WaitForChild("RemoteEvent"):FireServer()
+end)
+local Tab2 = GameName:NewSection("justrinn")
